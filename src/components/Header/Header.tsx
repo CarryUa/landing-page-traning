@@ -7,7 +7,7 @@ export default function Header() {
     <section className="fixed w-full text-black ">
       <Container>
         <div className="flex text-nowrap gap-2 justify-between">
-          <div className="flex gap-4 md:gap-10 flex-col md:flex-row text-lg text-standart_blue-400 ">
+          <div className="flex md:gap-10 flex-col md:flex-row text-lg text-standart_blue-400 ">
             <Link href={"/"}>Home</Link>
             <Link href={"/about"}>About</Link>
             <Link href={"/contact"}>contact us</Link>
