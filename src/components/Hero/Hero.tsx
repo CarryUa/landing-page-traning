@@ -16,7 +16,7 @@ export default function Hero() {
         src={backgroundImage1}
       />
       <Image
-        className="-z-40 max-w-[80vw] h-3/4 absolute bottom-0 -right-14"
+        className="h-2/3 absolute bottom-[10%] -right-14"
         alt="background image"
         src={backgroundImage2}
       />
