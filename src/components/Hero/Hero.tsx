@@ -8,18 +8,17 @@ export default function Hero() {
     <section className="flex relative items-center h-screen w-screen overflow-x-hidden">
       <Container>
         <HeroText />
+        <Image
+          className="-z-40 max-w-[80vw] h-full absolute top-0 right-0"
+          alt="background image"
+          src={backgroundImage1}
+        />
+        <Image
+          className="-z-40 md:z-0 h-2/3 opacity-80 md:opacity-100 absolute bottom-[10%] -right-28 "
+          alt="background image"
+          src={backgroundImage2}
+        />
       </Container>
-
-      <Image
-        className="-z-40 max-w-[80vw] h-full absolute right-0"
-        alt="background image"
-        src={backgroundImage1}
-      />
-      <Image
-        className="h-2/3 absolute bottom-[10%] -right-14"
-        alt="background image"
-        src={backgroundImage2}
-      />
     </section>
   );
 }
