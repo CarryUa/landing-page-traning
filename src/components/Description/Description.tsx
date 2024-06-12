@@ -7,11 +7,12 @@ import backgroundimage from "./static/BackgroundImage.svg";
 import HappyNewsImage from "./static/HappyNews.svg";
 import MentionImage from "./static/Mention.svg";
 import SocialInfluenserImage from "./static/SocialInfluenser.svg";
+import StandartButton from "../common/buttons/StandartButton";
 export default function Description() {
   return (
     <section>
       <Container>
-        <div className="min-h-[100vh] relative ">
+        <div className="min-h-[100vh] relative">
           <div className="flex flex-col left-[15%] md:left-[5%] gap-14 md:top-1/4 max-w-[650px] top-[10%] absolute ">
             <TextDescription
               header="Light, Fast & Powerful"
@@ -19,8 +20,8 @@ export default function Description() {
 mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.d"
             />
             <div className="flex gap-7">
-              <Title className="max-w-sm"></Title>
-              <Title className="max-w-sm"></Title>
+              <Title className="max-w-md"></Title>
+              <Title className="max-w-md"></Title>
             </div>
           </div>
           <Image
@@ -29,13 +30,13 @@ mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla 
             alt="background image"
           />
         </div>
-        <div className="flex flex-col gap-28">
+        <div className="flex flex-col gap-40 mt-[410px] md:mt-0">
           <ProductDescription
             image={HappyNewsImage}
             alt="Happy News Image"
             header="Light, Fast & Powerful"
             text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.d"
+mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
           />
           <ProductDescription
             image={SocialInfluenserImage}
@@ -49,8 +50,15 @@ mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla 
             alt="Happy News Image"
             header="Light, Fast & Powerful"
             text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.d"
-          />
+mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+          >
+            <StandartButton
+              className="max-w-[200px] mt-2 lg:mt-10 text-center"
+              href="/shop"
+            >
+              Purchase Now
+            </StandartButton>
+          </ProductDescription>
         </div>
       </Container>
     </section>
