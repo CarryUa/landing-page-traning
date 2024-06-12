@@ -4,7 +4,7 @@ import StandartButton from "../common/buttons/StandartButton";
 
 export default function Header() {
   return (
-    <section className="fixed w-full text-black ">
+    <header className="fixed w-full text-black z-50">
       <Container>
         <div className="flex text-nowrap gap-2 justify-between">
           <div className="flex md:gap-10 flex-col md:flex-row text-lg text-standart_blue-400 ">
@@ -20,6 +20,6 @@ export default function Header() {
           </StandartButton>
         </div>
       </Container>
-    </section>
+    </header>
   );
 }
